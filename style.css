@@ -1,0 +1,59 @@
+:root {
+    --text-color: #F2F2F2;
+    --light-green:#027333;
+    --dark-green:#025928;
+    --dark-blue:#1D1B59;
+    --light-blue:#221F73;
+    --bg-color: #090f1b; /* we can use this better than #000000 */
+}
+
+.navbar-toggler:focus ,.btn-close:focus{
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+.nav-link:hover{
+    font-weight: 650;
+}
+.nav-link{
+    position: relative;
+}
+@media screen and (max-width: 991px){    
+        .nav-link{width: 5ch;}
+        #achievmentsNav{width: 11ch !important;}
+}
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 100%;
+    height: 2px;
+    background-color: var(--light-blue);
+    visibility: hidden;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transform-origin: left;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    transform: translateX(-50%) scaleX(1);
+    visibility: visible;
+    background-color: var(--light-green);
+}
+
+    /* ?????? */
+    .nav-link:active::before{
+        width: 100% !important;    
+        visibility: visible !important;
+        background-color: var(--light-green);
+    }
+
+.nav-link{
+    color: var(--light-blue) !important;
+}
+.nav-item{
+    font-weight: 600;
+    font-size: 1.3rem;
+    
+}
