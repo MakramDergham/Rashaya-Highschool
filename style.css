@@ -6,7 +6,9 @@
     --light-blue:#221F73;
     --bg-color: #090f1b; /* we can use this better than #000000 */
 }
-
+*{
+    text-align: left !important;
+}
 .navbar-toggler:focus ,.btn-close:focus{
     outline: 0 !important;
     box-shadow: none !important;
