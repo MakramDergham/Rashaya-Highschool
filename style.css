@@ -57,3 +57,6 @@
     font-size: 1.3rem;
     
 }
+.button-1{
+    border-color: var(--dark-blue);
+}
