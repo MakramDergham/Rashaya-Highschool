@@ -96,3 +96,9 @@
 	0%,100%{transform:scale(1,1)}
 	50%{transform:scale(1.2,1)}
 }
+.bigIcon {
+    font-size: 4em;
+}
+.achievementleft{
+    margin-top: 50px !important;
+}
