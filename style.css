@@ -108,3 +108,28 @@
 .achievementleft{
     margin-top: 50px !important;
 }
+@media (min-width: 768px) { /* Adjust for larger screens */
+    .image-container img {
+      max-width: 400px;
+    }
+    
+  }
+  @media (max-width: 767px) { /* Adjust for smaller screens */
+    .image-container img {
+      max-width: 300px;
+    }
+}
+@media (max-width:1200px){
+    .main-event{
+        display: none;
+    }
+    .event-text{
+        width:80% !important
+    }
+    .event-text p{
+        font-size: 13px !important
+    }
+    .event-card{
+        height: fit-content !important;
+    }
+}
